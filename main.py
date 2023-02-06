@@ -8,7 +8,7 @@ def random_bom(rows: int, cols: int, bom_number: int) -> list:
     for row in range(rows):
         row_data = [] 
         for col in range(cols):
-            position = random.randint(0, 1)
+            position = random.randint(0, rows)
             if position == 1 and bom_number > 0:
                 row_data.append(-1)
                 bom_number -= 1
